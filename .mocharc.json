@@ -1,0 +1,10 @@
+{
+  "extension": [
+    "ts"
+  ],
+  "spec": "./**/*.spec.ts",
+  "reporter": "nyan",
+  "require": "ts-node/register",
+  "plugins": [
+  ]
+}
