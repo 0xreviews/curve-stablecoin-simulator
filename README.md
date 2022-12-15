@@ -1,5 +1,9 @@
 # Curve Stable Coin JS
 
+[![npm (tag)](https://img.shields.io/npm/v/curve-stablecoin-js)](https://www.npmjs.com/package/curve-stablecoin-js)
+![Tests (tag)](https://img.shields.io/github/workflow/status/0x-stan/curve-stablecoin-js/Tests?label=Tests)
+![Snyk Security Check (tag)](https://img.shields.io/github/workflow/status/0x-stan/curve-stablecoin-js/Snyk%20Security%20Check?label=Snyk%20Security%20Check)
+
 [curve-stablecoin](https://github.com/curvefi/curve-stablecoin) js implementation.
 
 🖥️ [Graphic Live Demo](https://crvusd.0xreviews.xyz/)
