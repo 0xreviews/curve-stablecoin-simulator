@@ -481,8 +481,9 @@ export class LLAMMA {
 	}
 
 	get_p(): number {
-		let band = this.get_band(this.active_band);
-		return band.get_p(this.p_out);
+		let [n0, active_band] = this.find_active_band();
+		if (!active_band) active_band = this.get_band(this.active_band);
+		return active_band.get_p(this.p_out);
 	}
 
 	// @notice Amount necessary to be exchanged to have the AMM at the final price `p`
@@ -492,7 +493,6 @@ export class LLAMMA {
 		if (!active_band) return [0, true];
 
 		let amount = 0;
-		let j = MAX_TICKS_UINT;
 		let pump = p >= this.get_p();
 
 		for (let i = this.min_band; i <= this.max_band; i++) {
