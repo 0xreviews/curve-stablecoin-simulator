@@ -1,6 +1,6 @@
 import { Controller } from "./Controller";
 import { LLAMMA } from "./LLAMMA";
-import { TickShare, UserAddress } from "./types";
+import { UserAddress } from "./types";
 
 export class User {
 	addr: UserAddress;
