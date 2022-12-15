@@ -1,7 +1,7 @@
 {
-  "name": "curve-stablecoin-js",
-  "version": "0.1.12",
-  "description": "Curve Stable Coin JS version.",
+  "name": "curve-stablecoin-simulator",
+  "version": "0.1.14",
+  "description": "Curve Stable Coin JS implementation.",
   "exports": {
     ".": {
       "import": {
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/0x-stan/curve-stablecoin-js.git"
+    "url": "https://github.com/0x-stan/curve-stablecoin-simulator.git"
   },
   "keywords": [
     "curve",
@@ -48,7 +48,7 @@
   "author": "0x-stan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/0x-stan/curve-stablecoin-js/issues"
+    "url": "https://github.com/0x-stan/curve-stablecoin-simulator/issues"
   },
   "homepage": "https://crvusd.0xreviews.xyz",
   "devDependencies": {

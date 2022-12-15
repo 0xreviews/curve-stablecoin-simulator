@@ -1,4 +1,4 @@
-# Curve Stable Coin JS
+# Curve Stable Coin Simulator
 
 [![npm (tag)](https://img.shields.io/npm/v/curve-stablecoin-js)](https://www.npmjs.com/package/curve-stablecoin-js)
 ![Tests (tag)](https://img.shields.io/github/workflow/status/0x-stan/curve-stablecoin-js/Tests?label=Tests)
@@ -11,13 +11,13 @@
 ## Install
 
 ```sh
-npm i curve-stablecoin-js
+npm i curve-stablecoin-simulator
 ```
 
 ## Getting Started
 
 ```ts
-import { LLAMMA, Controller } from "curve-stablecoin-js";
+import { LLAMMA, Controller } from "curve-stablecoin-simulator";
 
 const amm = new LLAMMA(100, 0.00, 0, 0.05, 0.02, 10 ** 6, 1000);
 const controller = new Controller(0.02, 0.05, amm);
@@ -33,12 +33,12 @@ const out_amount = amm.exchange(0, 1, 1000, 0.8);
 ## Test
 
 ```sh
-cd curve-stablecoin-js
+cd curve-stablecoin-simulator
 npm install
 npm test
 
 # output
-> curve-stablecoin-js@0.1.1 test
+> curve-stablecoin-simulator@0.1.14 test
 > mocha
 
  11  -_-_-_-_-_-__,------,
@@ -46,7 +46,7 @@ npm test
  0   -_-_-_-_-_-_~|_( ^ .^) 
      -_-_-_-_-_-_ ""  "" 
 
-  11 passing (283ms)
+  11 passing (275ms)
 ```
 
 ## TODO
