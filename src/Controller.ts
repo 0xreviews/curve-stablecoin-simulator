@@ -189,7 +189,6 @@ export class Controller {
 	}
 
 	repay(user: UserAddress, d_debt: number): number {
-		console.log("d_debt", d_debt);
 		if (d_debt === 0) return 0;
 
 		// Or repay all for MAX_UINT256
