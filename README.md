@@ -1,12 +1,22 @@
 # Curve Stable Coin JS
 
-[curve-stable coin](https://github.com/curvefi/curve-stablecoin) js implementation.
+[curve-stablecoin](https://github.com/curvefi/curve-stablecoin) js implementation.
 
-:point_right: [Graphic Live Demo](https://crvusd.0xreviews.xyz/)
+🖥️ [Graphic Live Demo](https://crvusd.0xreviews.xyz/)
 
-## Quick Start
+## 
+
+## Test
 
 ```sh
+cd curve-stablecoin-js
 npm install
 npm test
 ```
+
+## TODO
+
+- PegKeeper
+- mpoliceis
+  - AggMonetaryPolicy
+  - ConstantMonetaryPolicy

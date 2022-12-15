@@ -41,17 +41,9 @@
     "url": "https://github.com/0x-stan/curve-stablecoin-js.git"
   },
   "keywords": [
-    "npm",
-    "javascript",
-    "typescript",
-    "esm",
-    "cjs",
-    "nodejs",
-    "commonjs",
-    "ecmascript",
-    "beginner",
-    "example",
-    "demonstration"
+    "curve",
+    "stablecoin",
+    "typescript"
   ],
   "author": "0x-stan",
   "license": "MIT",
