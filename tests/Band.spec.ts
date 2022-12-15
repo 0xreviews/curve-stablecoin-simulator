@@ -44,21 +44,21 @@ describe("Band", () => {
 				assert.approximately(
 					Inv / (p_o * A ** 2 * y0 ** 2),
 					1,
-					1e-3,
+					1e-2,
 					`Inv = p_o A**2 y0**2 not equal`
 				);
 				// Inv = (x + f)(y + g)
 				assert.approximately(
 					Inv / ((x + f) * (y + g)),
 					1,
-					1e-3,
+					1e-2,
 					"Inv = (x + f)(y + g) not equal"
 				);
 				// Inv = (x0 + f)(g)
 				assert.approximately(
 					Inv / ((x0 + f) * g),
 					1,
-					1e-3,
+					1e-2,
 					"Inv = (x0 + f)(g) not equal"
 				);
 
