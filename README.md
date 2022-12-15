@@ -32,6 +32,17 @@ const out_amount = amm.exchange(0, 1, 1000, 0.8);
 cd curve-stablecoin-js
 npm install
 npm test
+
+# output
+> curve-stablecoin-js@0.1.1 test
+> mocha
+
+ 11  -_-_-_-_-_-__,------,
+ 0   -_-_-_-_-_-__|  /\_/\ 
+ 0   -_-_-_-_-_-_~|_( ^ .^) 
+     -_-_-_-_-_-_ ""  "" 
+
+  11 passing (283ms)
 ```
 
 ## TODO
