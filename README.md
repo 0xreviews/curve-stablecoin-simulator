@@ -1,8 +1,8 @@
 # Curve Stable Coin Simulator
 
 [![npm (tag)](https://img.shields.io/npm/v/curve-stablecoin-simulator)](https://www.npmjs.com/package/curve-stablecoin-simulator)
-![Tests (tag)](https://img.shields.io/github/workflow/status/0x-stan/curve-stablecoin-simulator/Tests?label=Tests)
-![Snyk Security Check (tag)](https://img.shields.io/github/workflow/status/0x-stan/curve-stablecoin-simulator/Snyk%20Security%20Check?label=Snyk%20Security%20Check)
+![Tests (tag)](https://img.shields.io/github/actions/workflow/status/0x-stan/curve-stablecoin-simulator/tests.yml?branch=main)
+![Snyk Security Check (tag)](https://img.shields.io/github/actions/workflow/status/0x-stan/curve-stablecoin-simulator/snyk.yml?branch=main&label=Snyk%20Security%20Check)
 
 [curve-stablecoin](https://github.com/curvefi/curve-stablecoin) js implementation.
 
