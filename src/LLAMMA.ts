@@ -127,9 +127,14 @@ export class LLAMMA {
 
 	print_bands(): PrintBandResult[] {
 		return Object.keys(this.bands)
-			.sort()
-			.map((tick) => {
-				let t = parseInt(tick);
+			.map((key) => parseInt(key))
+			.sort(function (a: Number, b: Number) {
+				if (a < b) return -1;
+				if (a > b) return 1;
+				return 0;
+			})
+			.map((tick: number) => {
+				let t = parseInt(`${tick}`);
 				const { x, y } = this.get_band(t);
 				return {
 					tick: t,
@@ -142,12 +147,15 @@ export class LLAMMA {
 
 	find_active_band(): [number, Band | null] {
 		let n0 = this.active_band;
-		const bands = this.print_bands();
 		let active_band: Band | null = null;
-		for (let i = 0; i < bands.length; i++) {
+		for (let i = 0; i < MAX_SKIP_TICKS; i++) {
 			active_band = this.get_band(n0);
 			if (active_band.x !== 0 || active_band.y !== 0) break;
-			n0++;
+			if (n0 > this.max_band) {
+				n0--;
+			} else {
+				n0++;
+			}
 		}
 		return [n0, active_band];
 	}
